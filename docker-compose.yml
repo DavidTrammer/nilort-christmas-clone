@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  drupal:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nilort_christmas_drupal
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web/themes/custom:/var/www/html/web/themes/custom
+      - ./web/modules/custom:/var/www/html/web/modules/custom
+      - ./config/sync:/var/www/html/config/sync
+      - drupal_files:/var/www/html/web/sites/default/files
+    environment:
+      - DRUPAL_HASH_SALT=nilort-christmas-local-dev-salt
+
+volumes:
+  drupal_files:

@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Nilort Christmas Core module.
+ */
+
+use Drupal\Core\Render\BubbleableMetadata;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function nilort_christmas_core_page_attachments(array &$attachments): void {
+  // Attach holiday styling and snowfall libraries
+  $attachments['#attached']['library'][] = 'nilort_christmas/global-styling';
+}
+
+/**
+ * Implements hook_theme().
+ */
+function nilort_christmas_core_theme($existing, $type, $theme, $path): array {
+  return [
+    'festive_snow' => [
+      'variables' => ['enabled' => TRUE],
+      'template' => 'block--festive-snow',
+    ],
+    'festive_lights' => [
+      'variables' => ['colors' => []],
+      'template' => 'block--festive-lights',
+    ],
+  ];
+}

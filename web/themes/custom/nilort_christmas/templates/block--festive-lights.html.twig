@@ -1,0 +1,11 @@
+{#
+/**
+ * @file
+ * Festive Christmas lights string block template.
+ */
+#}
+<div class="lights-garland" aria-hidden="true">
+  {% for i in 1..20 %}
+    <div class="light-bulb {{ cycle(['red', 'gold', 'green', 'blue', 'white'], loop.index0) }}"></div>
+  {% endfor %}
+</div>

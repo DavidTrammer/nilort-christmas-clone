@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+  <meta charset="utf-8">
+  <meta name="Generator" content="Drupal 10 (https://www.drupal.org)">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilort IT Group | Christmas Holiday Edition — Drupal 10/11 Powered</title>
+
+  <meta name="description" content="At Nilort IT Group, we connect IT talents with trusted partners, staying true to our core values of Collaboration, Trust and Proximity. Cloud support, IT Management, System Engineering are among our main areas of expertise. Powered by Drupal 10/11.">
+  <meta property="og:site_name" content="Nilort IT Group">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nilort IT Group | Christmas Holiday Edition — Drupal 10/11 Powered">
+  <meta property="og:description" content="Connecting Human Talent in the Digital World. Christmas themed edition with Cloud Support, System Engineering, and IT Project Management expertise.">
+
+  <link rel="icon" type="image/png" href="themes/custom/nilort_christmas/assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" media="all" href="themes/custom/nilort_christmas/css/styles.css">
+</head>
+<body class="path-frontpage page-node-type-page nilort-festive-theme holiday-season-2026">
+  <a href="#main-content" class="visually-hidden focusable skip-link" style="position:absolute;top:-999px;left:-999px;">
+    Skip to main content
+  </a>
+
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <!-- Interactive Falling Snow Canvas -->
+    <canvas id="snow-canvas" aria-hidden="true"></canvas>
+
+    <!-- Festive Top Announcement Bar -->
+    <aside class="festive-top-bar" aria-label="Holiday Announcement">
+      <div class="top-bar-inner">
+        <div class="top-bar-message">
+          <span class="tree-icon">🎄</span>
+          <span><strong>Holiday Season Greetings:</strong> Nilort IT Group wishes you a joyful Christmas &amp; a prosperous New Year!</span>
+        </div>
+        <div class="top-bar-controls">
+          <button id="snow-toggle-btn" class="snow-toggle-btn" aria-label="Toggle falling snow effect">
+            <span>❄️</span> Snow: On
+          </button>
+          <div class="lang-switch" aria-label="Language selection">
+            <a href="#" class="lang-btn active">EN</a>
+            <span>|</span>
+            <a href="#" class="lang-btn">FR</a>
+            <span>|</span>
+            <a href="#" class="lang-btn">NL</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Christmas Lights Garland String -->
+    <div class="lights-garland" aria-hidden="true">
+      <div class="light-bulb red"></div>
+      <div class="light-bulb gold"></div>
+      <div class="light-bulb green"></div>
+      <div class="light-bulb blue"></div>
+      <div class="light-bulb red"></div>
+      <div class="light-bulb white"></div>
+      <div class="light-bulb gold"></div>
+      <div class="light-bulb green"></div>
+      <div class="light-bulb red"></div>
+      <div class="light-bulb blue"></div>
+      <div class="light-bulb gold"></div>
+      <div class="light-bulb green"></div>
+      <div class="light-bulb white"></div>
+      <div class="light-bulb red"></div>
+      <div class="light-bulb gold"></div>
+      <div class="light-bulb green"></div>
+      <div class="light-bulb blue"></div>
+      <div class="light-bulb red"></div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="site-header" role="banner">
+      <div class="navbar-container">
+        <div class="brand-wrapper">
+          <a href="#top" class="brand-logo-container" aria-label="Nilort IT Group Home">
+            <!-- Animated Santa Hat perched over the logo -->
+            <svg class="santa-hat" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15,75 C20,30 65,15 85,35 C75,55 35,70 15,75 Z" fill="#dc2626"/>
+              <path d="M78,35 C88,40 92,25 82,20 C72,15 70,30 78,35 Z" fill="#dc2626"/>
+              <circle cx="85" cy="22" r="10" fill="#ffffff" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.15))"/>
+              <path d="M10,75 C25,68 65,68 82,75 C85,82 75,88 70,88 C50,88 35,88 18,88 C10,88 8,80 10,75 Z" fill="#ffffff" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.1))"/>
+            </svg>
+            <img src="themes/custom/nilort_christmas/assets/nilort-logo.png" alt="Nilort IT Group Logo" class="brand-logo">
+          </a>
+        </div>
+
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="#about" class="nav-item">About Us</a>
+          <a href="#expertises" class="nav-item">Our Expertises</a>
+          <a href="#values" class="nav-item">Why Nilort</a>
+          <a href="#careers" class="nav-item">Work @ Nilort</a>
+          <a href="#faq" class="nav-item">FAQ</a>
+          <a href="#contact" class="nav-item">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-primary">Get in Touch 🎁</a>
+          <button id="mobile-toggle-btn" class="mobile-menu-toggle" aria-label="Open Navigation Menu">
+            <span class="hamburger-icon">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="drawer-overlay" class="mobile-drawer-overlay"></div>
+    <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile Navigation Menu">
+      <div class="drawer-header">
+        <img src="themes/custom/nilort_christmas/assets/nilort-logo.png" alt="Nilort IT Group" style="height: 32px;">
+        <button id="close-drawer-btn" class="close-drawer-btn" aria-label="Close Navigation Menu">✕</button>
+      </div>
+      <div class="drawer-links">
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#expertises" class="nav-link">Our Expertises</a>
+        <a href="#values" class="nav-link">Why Nilort</a>
+        <a href="#careers" class="nav-link">Work @ Nilort</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="drawer-cta">
+        <a href="#contact" class="btn btn-primary" style="width:100%;">Get in Touch 🎁</a>
+        <a href="#careers" class="btn btn-gold" style="width:100%;">Join Our Team 🌟</a>
+      </div>
+    </aside>
+
+    <main id="main-content" role="main">
+      <!-- HERO SECTION - FESTIVE WINTER WONDERLAND -->
+      <section class="hero-section" id="hero">
+        <div class="hero-container">
+          <div class="hero-festive-badge">
+            <span>🎅</span> Holiday Edition • Drupal 10/11 Architecture
+          </div>
+          
+          <h1 class="hero-title">
+            Connecting Human Talent in the <span class="gold-highlight">Digital World</span>
+          </h1>
+          
+          <p class="hero-description">
+            We listen to understand. That's what we do as your dedicated IT staffing expert. That’s how we create the perfect match between our talents and our valued partners across Belgium.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#expertises" class="btn btn-gold">Explore Expertises ❄️</a>
+            <a href="#careers" class="btn btn-primary">Join our Team 🎄</a>
+          </div>
+
+          <!-- 4 Key Stat Counters with Snow Caps -->
+          <div class="hero-stats-grid">
+            <div class="stat-card">
+              <span class="stat-snow-cap" title="Holiday Magic">❄️</span>
+              <span class="stat-number">25+</span>
+              <span class="stat-label">Years of Experience in the Industry</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-snow-cap" title="Holiday Magic">❄️</span>
+              <span class="stat-number">70+</span>
+              <span class="stat-label">Trustful Partners all over Belgium</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-snow-cap" title="Holiday Magic">❄️</span>
+              <span class="stat-number">120+</span>
+              <span class="stat-label">Consultants in BeNeLux with MetiSelect</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-snow-cap" title="Holiday Magic">❄️</span>
+              <span class="stat-number">3x</span>
+              <span class="stat-label">Trends Gazelle Award Fast-Growing Nominee</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bg-snowdrifts" aria-hidden="true"></div>
+      </section>
+
+      <!-- ABOUT US SECTION -->
+      <section class="about-section" id="about">
+        <div class="section-container">
+          <div class="about-grid">
+            <div class="about-text-content">
+              <span class="badge-tag badge-red">🎄 About Us</span>
+              <h3>We are your IT copilot in your digital journey.</h3>
+              
+              <p>
+                As a local partner with hands-on experience, we are dedicated to provide our talents with a solid home base where they can grow and work on challenging projects while supporting our clients in their IT challenges.
+              </p>
+              
+              <div class="about-quote-box">
+                "Every day, we commit to long-term partnerships built on our core values: Collaboration, Trust and Proximity."
+              </div>
+
+              <p>
+                Founded after years of IT Management at IBM/SkillTeam by Christian Trolin, Nilort Technologies IT Group bridges the gap between consultants, clients and partners by making IT easy and effective while supporting talent growth.
+              </p>
+
+              <a href="#contact" class="btn btn-outline">Learn More About Nilort →</a>
+            </div>
+
+            <div class="about-visual-card">
+              <span class="about-card-badge">✨ Nilort &amp; MetiSelect</span>
+              <span class="holiday-wreath-icon">🌿</span>
+              <h4>Stronger Together Across BeNeLux</h4>
+              <p style="color:#cbd5e1; font-size:0.95rem; line-height: 1.6;">
+                Nilort IT Group joined forces with MetiSelect to be even more present and competitive across Belgium and the BeNeLux, combining 120+ skilled IT consultants.
+              </p>
+              <ul>
+                <li><span class="bullet">⭐</span> Local presence in Mont-Saint-Guibert and Antwerp</li>
+                <li><span class="bullet">⭐</span> Dedicated guidance &amp; personalized project matching</li>
+                <li><span class="bullet">⭐</span> Fast, flexible, and future-proof digital execution</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3 Core Values Grid -->
+          <div class="section-header-centered" id="values" style="margin-bottom: 35px;">
+            <span class="badge-tag badge-gold">⭐ Our Guiding Stars</span>
+            <h2 class="section-title">Values That Guide Our Journey</h2>
+            <div class="ornament-divider">
+              <span class="ornament-line"></span>
+              <span>✨ 🎄 ✨</span>
+              <span class="ornament-line"></span>
+            </div>
+          </div>
+
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon-wrapper">🤝</div>
+              <h4 class="value-title">Collaboration</h4>
+              <p class="value-desc">
+                We believe in working closely with people, building meaningful relationships, and creating impact together. Connecting the right talent guarantees reliable IT operations and flawless execution.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-wrapper">🛡️</div>
+              <h4 class="value-title">Trust</h4>
+              <p class="value-desc">
+                Trust is the foundation of everything we do. We gained the trust of our clients and consultants by delivering on our promises: operational stability, outstanding quality, and authentic partnerships.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-wrapper">📍</div>
+              <h4 class="value-title">Proximity</h4>
+              <p class="value-desc">
+                In a constantly evolving world, we value proximity and respect, fostering transparent and honest communication to anticipate the needs of both our clients and consultants every day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR EXPERTISES SECTION - CHRISTMAS GIFT CARDS -->
+      <section class="expertises-section" id="expertises">
+        <div class="section-container">
+          <div class="section-header-centered">
+            <span class="badge-tag badge-green">🎁 Our Specializations</span>
+            <h2 class="section-title">How May We Help You?</h2>
+            <p class="section-subtitle">
+              With expertise in four key IT domains, we help clients face their digital and operational challenges while supporting our consultants in growing every step of the way.
+            </p>
+            <div class="ornament-divider">
+              <span class="ornament-line"></span>
+              <span>❄️ 🌟 ❄️</span>
+              <span class="ornament-line"></span>
+            </div>
+          </div>
+
+          <div class="expertises-grid">
+            <!-- Expertise 1 -->
+            <article class="expertise-card">
+              <div class="expertise-header">
+                <div class="expertise-icon-box">☁️</div>
+                <h3 class="expertise-title">Workplace &amp; Cloud Support</h3>
+              </div>
+              <p class="expertise-body">
+                By creating a stable and reliable IT environment, our Workplace &amp; Cloud Support consultants ensure end-users can consistently deliver their best without downtime or interruptions.
+              </p>
+              <div class="expertise-pills">
+                <span class="pill-tag">Microsoft 365</span>
+                <span class="pill-tag">Azure &amp; Hybrid Cloud</span>
+                <span class="pill-tag">Helpdesk &amp; VIP Support</span>
+                <span class="pill-tag">Device Management</span>
+              </div>
+              <a href="#contact" class="expertise-link">Inquire About Cloud Support ➔</a>
+            </article>
+
+            <!-- Expertise 2 -->
+            <article class="expertise-card">
+              <div class="expertise-header">
+                <div class="expertise-icon-box">🌐</div>
+                <h3 class="expertise-title">System &amp; Network Engineering</h3>
+              </div>
+              <p class="expertise-body">
+                Whether on-premise or in the cloud, our engineers are responsible for designing, managing, and supporting the technical backbone that keeps your organisation running securely and efficiently.
+              </p>
+              <div class="expertise-pills">
+                <span class="pill-tag">Cisco &amp; Fortinet</span>
+                <span class="pill-tag">Virtualization (VMware/Hyper-V)</span>
+                <span class="pill-tag">Network Security</span>
+                <span class="pill-tag">Disaster Recovery</span>
+              </div>
+              <a href="#contact" class="expertise-link">Inquire About Engineering ➔</a>
+            </article>
+
+            <!-- Expertise 3 -->
+            <article class="expertise-card">
+              <div class="expertise-header">
+                <div class="expertise-icon-box">📊</div>
+                <h3 class="expertise-title">IT Project Management</h3>
+              </div>
+              <p class="expertise-body">
+                Our IT Project Management consultants drive successful team coordination, service or project delivery through expert guidance, seamless coordination, and efficient execution at every stage.
+              </p>
+              <div class="expertise-pills">
+                <span class="pill-tag">Agile &amp; Scrum</span>
+                <span class="pill-tag">PRINCE2 / ITIL</span>
+                <span class="pill-tag">Change Management</span>
+                <span class="pill-tag">Digital Transformation</span>
+              </div>
+              <a href="#contact" class="expertise-link">Inquire About Project Management ➔</a>
+            </article>
+
+            <!-- Expertise 4 -->
+            <article class="expertise-card">
+              <div class="expertise-header">
+                <div class="expertise-icon-box">💻</div>
+                <h3 class="expertise-title">End-to-End Software Development</h3>
+              </div>
+              <p class="expertise-body">
+                From design to final release and support, our developers build custom digital solutions that help businesses move forward — fast, flexible, robust, and future-proof.
+              </p>
+              <div class="expertise-pills">
+                <span class="pill-tag">Full-Stack Web &amp; Mobile</span>
+                <span class="pill-tag">Drupal / PHP / Symfony</span>
+                <span class="pill-tag">API &amp; Microservices</span>
+                <span class="pill-tag">DevOps &amp; CI/CD</span>
+              </div>
+              <a href="#contact" class="expertise-link">Inquire About Development ➔</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAREERS / UNLEASH YOUR POTENTIAL SECTION -->
+      <section class="careers-section" id="careers">
+        <div class="section-container">
+          <div class="section-header-centered">
+            <span class="badge-tag badge-gold">🚀 Work @ Nilort</span>
+            <h2 class="section-title">Unleash Your Potential</h2>
+            <p class="section-subtitle">
+              Do you have the ambition to join a team of passionate and committed IT professionals? Let’s see how we can unwrap new opportunities and grow together!
+            </p>
+            <div class="ornament-divider">
+              <span class="ornament-line"></span>
+              <span>🎄 🎁 🎄</span>
+              <span class="ornament-line"></span>
+            </div>
+          </div>
+
+          <div class="careers-grid">
+            <div class="career-card">
+              <span class="career-icon-ornament">🎯</span>
+              <h4 class="career-title">Together we match you on challenging projects!</h4>
+              <p class="career-desc">
+                We explore different opportunities and based on expertise level, location, and practical details we select the best possible projects for you.
+              </p>
+            </div>
+
+            <div class="career-card">
+              <span class="career-icon-ornament">📈</span>
+              <h4 class="career-title">Together we create your training path!</h4>
+              <p class="career-desc">
+                Personal development doesn’t follow a template, it follows you! That’s why we shape your certifications, tech stacks, and career roadmap together.
+              </p>
+            </div>
+
+            <div class="career-card">
+              <span class="career-icon-ornament">⚖️</span>
+              <h4 class="career-title">Together we guard your healthy work-life balance!</h4>
+              <p class="career-desc">
+                Because we’re in it for the long run, we make sure that your professional ambition and personal well-being go hand in hand every single day.
+              </p>
+            </div>
+          </div>
+
+          <!-- Festive Banner CTA -->
+          <div class="careers-banner-cta">
+            <div class="banner-text">
+              <h4>Ready to unwrap your next IT career step? 🎅</h4>
+              <p>Explore current vacancies or send us an open application today.</p>
+            </div>
+            <a href="#contact" class="btn btn-gold">Join Our Team Today 🌟</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION (ACCORDION) -->
+      <section class="faq-section" id="faq">
+        <div class="section-container faq-container">
+          <div class="section-header-centered">
+            <span class="badge-tag badge-red">❓ Frequently Asked Questions</span>
+            <h2 class="section-title">Everything You Need to Know</h2>
+            <div class="ornament-divider">
+              <span class="ornament-line"></span>
+              <span>❄️ 🔔 ❄️</span>
+              <span class="ornament-line"></span>
+            </div>
+          </div>
+
+          <div class="faq-accordion">
+            <div class="faq-item active">
+              <button class="faq-question-btn" aria-expanded="true">
+                <span>What does Nilort IT Group do?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Nilort IT Group connects IT talents with trusted clients and partners across Belgium. We are active in Workplace &amp; Cloud Support, System &amp; Network Engineering, IT Project Management, and end-to-end custom software development.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span>How is Nilort different from a generic recruitment agency?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Nilort focuses exclusively on IT profiles, combining deep technical expertise with a human-centric approach to match consultants and clients on skills, culture, and long-term fit. We act as an IT copilot for our clients and a nurturing home base for our consultants.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span>Is Nilort part of a larger group?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, Nilort IT Group joined forces with MetiSelect to be even more present and competitive across the BeNeLux, forming a combined network of 120+ specialized consultants and experts.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span>Where is Nilort IT Group based?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Nilort's headquarters is located at Rue du Fond Cattelain 2/2.2, 1435 Mont-Saint-Guibert, Belgium, perfectly situated to support clients throughout Brussels, Wallonia, and Flanders.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION WITH FESTIVE FORM -->
+      <section class="contact-section" id="contact">
+        <div class="section-container">
+          <div class="section-header-centered">
+            <span class="badge-tag badge-gold">📬 Get in Touch</span>
+            <h2 class="section-title">Let's Connect This Holiday Season</h2>
+            <p class="section-subtitle">
+              Ready to talk about your digital challenges or looking for your next career opportunity? Send us a greeting or drop by our office!
+            </p>
+            <div class="ornament-divider">
+              <span class="ornament-line"></span>
+              <span>🎄 ✉️ 🎄</span>
+              <span class="ornament-line"></span>
+            </div>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info-card">
+              <h3>Nilort IT Group HQ</h3>
+              <p class="intro">
+                We look forward to meeting you over a warm cup of coffee or holiday tea.
+              </p>
+
+              <div class="contact-detail-items">
+                <div class="contact-item">
+                  <div class="contact-icon-bubble">📍</div>
+                  <div class="contact-item-text">
+                    <span class="label">Our Headquarters</span>
+                    <p>Rue du Fond Cattelain 2/2.2<br>1435 Mont-Saint-Guibert, Belgium</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon-bubble">📞</div>
+                  <div class="contact-item-text">
+                    <span class="label">Phone Support</span>
+                    <a href="tel:+3210750695">+32 10 75 06 95</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon-bubble">✉️</div>
+                  <div class="contact-item-text">
+                    <span class="label">Email Address</span>
+                    <a href="mailto:info@nilort.be">info@nilort.be</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon-bubble">💼</div>
+                  <div class="contact-item-text">
+                    <span class="label">LinkedIn Network</span>
+                    <a href="https://be.linkedin.com/company/nilort-technologies-it-group" target="_blank" rel="noopener noreferrer">Follow Nilort on LinkedIn ➔</a>
+                  </div>
+                </div>
+              </div>
+
+              <div style="padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 0.9rem; color: #cbd5e1;">
+                🎉 <em>Accepting project inquiries and consultant applications throughout the holidays!</em>
+              </div>
+            </div>
+
+            <div class="contact-form-card">
+              <h4 style="font-size: 1.4rem; color: var(--c-green-dark); margin-bottom: 20px; font-weight: 700;">
+                Send Us a Message 🎅
+              </h4>
+              
+              <form id="festive-contact-form">
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label class="form-label" for="form-name">Your Full Name *</label>
+                    <input type="text" id="form-name" name="name" class="form-control" placeholder="e.g. Marie Dubois" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="form-email">Your Email Address *</label>
+                    <input type="email" id="form-email" name="email" class="form-control" placeholder="marie@example.com" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-topic">What can we help you with?</label>
+                  <select id="form-topic" name="topic" class="form-control">
+                    <option value="consultant">I want to join Nilort as an IT Consultant</option>
+                    <option value="staffing">I need IT Talents for a client project</option>
+                    <option value="cloud">Workplace &amp; Cloud Support Inquiry</option>
+                    <option value="engineering">System &amp; Network Engineering Inquiry</option>
+                    <option value="pm">IT Project Management Inquiry</option>
+                    <option value="dev">Custom Software Development Inquiry</option>
+                    <option value="other">General Holiday Greetings &amp; Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-message">Your Message *</label>
+                  <textarea id="form-message" name="message" class="form-control" placeholder="Tell us about your project or career ambitions..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+                  Send Message with Holiday Cheer 🎄
+                </button>
+
+                <div id="form-status-msg" class="form-status-msg" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- METIGROUP PARTNER ECOSYSTEM -->
+      <div class="footer-group-ecosystem">
+        <div class="section-container">
+          <p class="ecosystem-title">Part of the MetiGroup Network Across BeNeLux</p>
+          <div class="partner-badges">
+            <span class="partner-badge">Nilort Technologies</span>
+            <span class="partner-badge">MetiSelect</span>
+            <span class="partner-badge">MetiProjects</span>
+            <span class="partner-badge">OConnect</span>
+            <span class="partner-badge">SkillSourcing</span>
+            <span class="partner-badge">HeartForTalent</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="section-container">
+        <div class="footer-top-grid">
+          <div class="footer-brand-col">
+            <img src="themes/custom/nilort_christmas/assets/nilort-logo.png" alt="Nilort IT Group" style="height: 38px; filter: brightness(0) invert(1);">
+            <p>
+              Connecting human talent in the digital world. Built upon Collaboration, Trust and Proximity.
+            </p>
+            <div style="font-size: 0.85rem; color: var(--c-gold-bright);">
+              ✨ Wishing you a joyous holiday season!
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h5>Expertises</h5>
+            <div class="footer-links-list">
+              <a href="#expertises">Cloud Support</a>
+              <a href="#expertises">System &amp; Network</a>
+              <a href="#expertises">IT Project Management</a>
+              <a href="#expertises">Software Development</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h5>Company</h5>
+            <div class="footer-links-list">
+              <a href="#about">About Nilort</a>
+              <a href="#values">Our Values</a>
+              <a href="#careers">Work @ Nilort</a>
+              <a href="#faq">FAQ</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h5>Contact</h5>
+            <div class="footer-links-list">
+              <a href="tel:+3210750695">+32 10 75 06 95</a>
+              <a href="mailto:info@nilort.be">info@nilort.be</a>
+              <a href="#contact">Rue du Fond Cattelain 2/2.2</a>
+              <a href="https://be.linkedin.com/company/nilort-technologies-it-group" target="_blank" rel="noopener noreferrer">LinkedIn ➔</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <div>
+            © Nilort Technologies IT Group. Powered by Drupal 10/11 &amp; Azure. Festive Holiday Edition.
+          </div>
+          <button id="back-to-top" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
+            ❄️
+          </button>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="themes/custom/nilort_christmas/js/app.js"></script>
+</body>
+</html>

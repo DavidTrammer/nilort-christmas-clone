@@ -1,0 +1,9 @@
+name: 'Nilort Christmas Core'
+type: module
+description: 'Core functionality, holiday settings, and custom blocks for the Nilort Christmas website.'
+package: 'Nilort'
+core_version_requirement: ^10 || ^11
+version: '1.0.0'
+
+dependencies:
+  - drupal:block

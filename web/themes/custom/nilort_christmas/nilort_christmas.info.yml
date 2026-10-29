@@ -1,0 +1,22 @@
+name: 'Nilort Christmas Theme'
+type: theme
+description: 'A bespoke holiday Christmas theme for Nilort IT Group featuring deep festive reds, forest greens, snowy whites, gold accents, animated falling snow, and responsive layouts.'
+package: 'Custom'
+core_version_requirement: ^10 || ^11
+base theme: false
+
+libraries:
+  - nilort_christmas/global-styling
+
+regions:
+  top_bar: 'Festive Announcement Bar'
+  header: 'Header & Navigation'
+  hero: 'Winter Wonderland Hero'
+  about: 'About Us'
+  values: 'Guiding Stars / Core Values'
+  expertises: 'Specializations & Expertises'
+  careers: 'Work @ Nilort / Careers'
+  faq: 'Frequently Asked Questions'
+  contact: 'Contact & Inquiries'
+  ecosystem: 'Partner Ecosystem'
+  footer: 'Site Footer'

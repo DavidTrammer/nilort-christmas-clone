@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: yXadgoYs7x-hTaeW6snVOH--SRGGArBCnoV9YqA4XRU
+langcode: en
+uuid: c3d9a1f2-7e84-469b-9a11-b0e5c6a12345
+name: 'Nilort IT Group | Christmas Holiday Edition'
+mail: info@nilort.be
+slogan: 'Connecting Human Talent in the Digital World'
+page:
+  403: ''
+  404: ''
+  front: '/node/1'
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

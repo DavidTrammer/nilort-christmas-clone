@@ -1,0 +1,3 @@
+services:
+  drush.command.nilort:
+    class: \Drupal\Core\DependencyInjection\Container

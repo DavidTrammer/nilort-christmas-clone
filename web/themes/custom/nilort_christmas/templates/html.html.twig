@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Theme override for the basic html structure of a single Drupal page.
+ *
+ * Variables:
+ * - logged_in: A flag indicating if user is logged in.
+ * - root_path: The root path of the current page.
+ * - node_type: The content type for the current node.
+ * - head_title: A list of elements for the <title> tag.
+ * - head: Markup for the HEAD element.
+ * - styles: Style tags necessary to render the page.
+ * - scripts: Script tags necessary to render the page.
+ * - attributes: HTML attributes for the <body> tag.
+ * - page_top: Initial rendered markup.
+ * - page: The rendered page markup.
+ * - page_bottom: Closing rendered markup.
+ */
+#}
+<!DOCTYPE html>
+<html{{ html_attributes }}>
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <meta name="Generator" content="Drupal 10 (https://www.drupal.org)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body{{ attributes.addClass('path-frontpage', 'nilort-festive-theme') }}>
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      {{ 'Skip to main content'|t }}
+    </a>
+    {{ page_top }}
+    {{ page }}
+    {{ page_bottom }}
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+  </body>
+</html>

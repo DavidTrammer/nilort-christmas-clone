@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Nilort Christmas theme.
+ */
+
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function nilort_christmas_preprocess_html(array &$variables): void {
+  // Add Christmas holiday classes to body
+  $variables['attributes']['class'][] = 'nilort-festive-theme';
+  $variables['attributes']['class'][] = 'holiday-season-2026';
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function nilort_christmas_preprocess_page(array &$variables): void {
+  $variables['site_name'] = \Drupal::config('system.site')->get('name');
+  $variables['site_slogan'] = \Drupal::config('system.site')->get('slogan');
+  $variables['site_mail'] = \Drupal::config('system.site')->get('mail');
+
+  $theme_settings = \Drupal::config('nilort_christmas.settings');
+  $variables['snow_enabled'] = $theme_settings->get('snow_enabled') ?? TRUE;
+  $variables['holiday_message'] = $theme_settings->get('holiday_message') ?? 'Season’s Greetings from Nilort IT Group!';
+  $variables['show_santa_hat'] = $theme_settings->get('show_santa_hat') ?? TRUE;
+  $variables['show_christmas_lights'] = $theme_settings->get('show_christmas_lights') ?? TRUE;
+}
+
+/**
+ * Implements hook_preprocess_region().
+ */
+function nilort_christmas_preprocess_region(array &$variables): void {
+  $region = $variables['region'];
+  $variables['attributes']['class'][] = 'region--' . $region;
+}
